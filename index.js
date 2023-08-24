@@ -7,13 +7,12 @@ app.get('/', (req, res) => {
   response.numerator = req.query.numerator;
   response.denominator = req.query.denominator;
   
-  // TODO: Delete the next line
-  response.result = parseFloat(response.numerator,10)/parseFloat(response.denominator,10);
-  try {
-    // TODO: Uncomment the next line
-    // response.result = parseFloat(numerator,10)/parseFloat(denominator,10);
-  } catch ( e ){
-    response.error = e;
+  if ( !req.query.numerator || !req.query.denominator ) {
+    // TODO: Comment out line 12 and uncomment line 13
+    throw new Error('You must specify a valid numerator and denominator');
+    // response.error = 'You must specify a valid numerator and denominator';
+  } else {
+    response.result = parseFloat(response.numerator,10)/parseFloat(response.denominator,10);
   }
   res.json(response);
 })
