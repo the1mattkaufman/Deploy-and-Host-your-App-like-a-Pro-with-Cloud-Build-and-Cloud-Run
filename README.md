@@ -30,6 +30,10 @@ Optional: To edit the Project ID, click Edit. The project ID can't be changed af
 7. Enter the Branch to indicate what source should be used when running the trigger. You can use a [regex](https://github.com/google/re2/wiki/Syntax). (You can just use main for this demo)
 8. Select the Google Cloud Buildpacks Build Type option
 9. Click Save
+10. Enter a Service name
+11. Select Allow unauthenticated invocations as the Authentication
+12. Click Save
+
 
 ### Testing our app
 1. In the Google Cloud console, go to Menu > Cloud Run
@@ -56,5 +60,7 @@ Optional: To edit the Project ID, click Edit. The project ID can't be changed af
 
 
 ### Additional Resources
+
+[Documentation: Deploy a Node.js service to Cloud Run](https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-nodejs-service)
 
 [Codelab: Dev to Prod in Three Easy Steps with Cloud Run](https://codelabs.developers.google.com/codelabs/cloud-run-dev2prod)
