@@ -10,8 +10,8 @@ app.get('/', (req, res) => {
 
   if ( !req.query.numerator || !req.query.denominator ) {
     // TODO: Comment out line 12 and uncomment line 13
-    //throw new Error('Invalid numerator or denominator');
-    response.error = 'Invalid numerator or denominator';
+    throw new Error('Invalid numerator or denominator');
+    //response.error = 'Invalid numerator or denominator';
   }
   res.json(response);
 })

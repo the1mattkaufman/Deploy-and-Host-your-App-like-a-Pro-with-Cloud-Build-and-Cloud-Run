@@ -43,6 +43,7 @@ Optional: To edit the Project ID, click Edit. The project ID can't be changed af
 4. Open a new browser tab and paste the URL followed by ?numerator=150&denominator=10 then hit Enter to visit the URL.
 5. You should see JSON output displaying the numerator, denominator and the result of doing the division.
 6. Try different values. You should receive an Internal Server Error when not specifying values or specifying one as 0.
+7. Back on your Service Details in the Google Cloud Console, click the LOGS link to confirm that your Error was logged.
 
 ### Trigger Building a Revision
 1. Using either your preferred IDE or directly in GitHub, make the changes specified in the TODOs in index.js.  
@@ -53,10 +54,15 @@ Optional: To edit the Project ID, click Edit. The project ID can't be changed af
 6. Once the build has completed successfully, repeat the steps previously performed in Testing our App.
 7. You should now receive valid JSON when testing with a 0 denominator.
 
-
 ### Route Traffic
 1. In the Google Cloud console, go to Menu > Cloud Run
 2. Click on the name of your service.
+3. Click the plus icon in the Revision URLs (tags) column for the second revision in the list
+4. Enter error as the Tag name 1
+5. Click Save
+6. Click on the link to open the new Revision URL. The Internal Server Error should appear.
+7. Confirm the Internal Server Error does not appear when visiting the URL for the service at the top of the page
+
 
 
 
