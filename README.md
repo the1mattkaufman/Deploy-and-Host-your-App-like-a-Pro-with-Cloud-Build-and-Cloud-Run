@@ -2,6 +2,8 @@
 
 This repository is for demonstration purposes only as part of a talk I give with the same title. You can use this repository to follow along with my talk and deploy your first app to Cloud Run using Cloud Build.
 
+
+
 ## Instructions
 
 ### Fork this Repo
@@ -32,8 +34,7 @@ Optional: To edit the Project ID, click Edit. The project ID can't be changed af
 9. Click Save
 10. Enter a Service name
 11. Select Allow unauthenticated invocations as the Authentication
-12. Click Save
-
+12. Click Create
 
 ### Testing our app
 1. In the Google Cloud console, go to Menu > Cloud Run
