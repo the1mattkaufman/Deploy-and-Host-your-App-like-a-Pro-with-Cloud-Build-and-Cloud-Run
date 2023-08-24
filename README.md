@@ -42,7 +42,7 @@ Optional: To edit the Project ID, click Edit. The project ID can't be changed af
 3. Copy the URL for your service
 4. Open a new browser tab and paste the URL followed by ?numerator=150&denominator=10 then hit Enter to visit the URL.
 5. You should see JSON output displaying the numerator, denominator and the result of doing the division.
-6. Try changing the denominator to 0. You should see an error
+6. Try different values. You should receive an Internal Server Error when not specifying values or specifying one as 0.
 
 ### Trigger Building a Revision
 1. Using either your preferred IDE or directly in GitHub, make the changes specified in the TODOs in index.js.  
