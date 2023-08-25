@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
   response.result = response.numerator / response.denominator;
 
   if ( !req.query.numerator || !req.query.denominator ) {
-    // TODO: Comment out line 12 and uncomment line 13
+    // TODO: Comment out line 13 and uncomment line 14
     throw new Error('Invalid numerator or denominator');
     //response.error = 'Invalid numerator or denominator';
   }
